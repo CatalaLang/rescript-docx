@@ -79,3 +79,25 @@ let q = Paragraph.make'({
     heading: #Heading1,
 })
 ```
+
+### Inline variant types
+
+TypeScript variant types are modelized with an [unboxed ReScript
+variant](https://rescript-lang.org/docs/manual/latest/unboxed):
+
+```typescript
+// TypeScript variant
+type t = {
+    value: number | string
+}
+```
+
+```rescript
+// In ReScript
+@unboxed
+type numberOrString = Number(float) | String(string)
+
+type t = {
+    value: numberOrString
+}
+```

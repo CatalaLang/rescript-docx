@@ -346,9 +346,9 @@
 - [ ] `MathComponent`
 - [ ] `ParagraphChild`
 - [ ] `Percentage`
-- [ ] `PositiveUniversalMeasure`
+- [x] `PositiveUniversalMeasure`
 - [ ] `UniqueNumericIdCreator`
-- [ ] `UniversalMeasure`
+- [x] `UniversalMeasure`
 
 ### Variables
 
