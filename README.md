@@ -24,9 +24,35 @@
 yarn add -D rescript-docx
 ```
 
+## API coverage
+
+See which features are covered in the dedicated [doc file](https://github.com/EmileRolley/rescript-docx/blob/main/docs/supported-features.md).
+
 ## Binding convention import
 
 For the binding, several conventions has been used:
+
+### Enums
+
+Enums are implemented as modules with a `t` type and functions with the name of
+the enum in lowercase.
+
+```typescript
+// In TypeScript
+enum AlignmentType = {
+    START = "start",
+    CENTER = "center",
+    ...
+}
+```
+
+```rescript
+// Corresponding AlignmentType.resi file
+type t
+let start: t
+let center: t
+...
+```
 
 ### Polymorphic constructors 
 
