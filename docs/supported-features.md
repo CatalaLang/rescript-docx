@@ -13,7 +13,7 @@
 - [ ] `FrameWrap`
 - [ ] `HeaderFooterReferenceType`
 - [ ] `HeaderFooterType`
-- [ ] `HeadingLevel`
+- [x] `HeadingLevel`
 - [ ] `HeightRule`
 - [ ] `HorizontalPositionAlign`
 - [ ] `HorizontalPositionRelativeFrom`
