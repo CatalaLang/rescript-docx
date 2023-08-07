@@ -1,4 +1,4 @@
-# rescrip<div align="center">
+<div align="center">
   <h3 align="center">
 	<big><code>rescript-docx</code></big>
   </h3>
