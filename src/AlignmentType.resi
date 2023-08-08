@@ -16,28 +16,25 @@ let end: t
 let both: t
 
 /** Medium Kashida Length */
-let mediumKashida: t
+let medium_kashida: t
 
 /** Distribute All Characters Equally */
 let distribute: t
 
 /** Align to List Tab */
-let numTab: t
+let num_tab: t
 
 /** Widest Kashida Length */
-let highKashida: t
+let high_kashida: t
 
 /** Low Kashida Length */
-let lowKashida: t
+let low_kashida: t
 
 /** Thai Language Justification */
-let thaiDistribute: t
+let thai_distribute: t
 
 /** Align Left */
 let left: t
 
 /** Align Right */
 let right: t
-
-/** Justified */
-let both: t

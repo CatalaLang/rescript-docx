@@ -1,30 +1,56 @@
 /** @see https://docx.js.org/api/enums/BorderStyle.html */
 type t
 
-let dashDotStroked: t
-let dashed: t
-let dashSmallGap: t
-let dotDash: t
-let dotDotDash: t
-let dotted: t
-let double: t
-let doubleWave: t
-let inset: t
-let nil: t
-let none: t
-let outset: t
 let single: t
+
+let dash_dot_stroked: t
+
+let dashed: t
+
+let dash_small_gap: t
+
+let dot_dash: t
+
+let dot_dot_dash: t
+
+let dotted: t
+
+let double: t
+
+let double_wave: t
+
+let inset: t
+
+let nil: t
+
+let none: t
+
+let outset: t
+
 let thick: t
-let thickThinLargeGap: t
-let thickThinMediumGap: t
-let thickThinSmallGap: t
-let thinThickLargeGap: t
-let thinThickMediumGap: t
-let thinThickSmallGap: t
-let thinThickThinLargeGap: t
-let thinThickThinMediumGap: t
-let thinThickThinSmallGap: t
-let threeDEmboss: t
-let threeDEngrave: t
+
+let thick_thin_large_gap: t
+
+let thick_thin_medium_gap: t
+
+let thick_thin_small_gap: t
+
+let thin_thick_large_gap: t
+
+let thin_thick_medium_gap: t
+
+let thin_thick_small_gap: t
+
+let thin_thick_thin_large_gap: t
+
+let thin_thick_thin_medium_gap: t
+
+let thin_thick_thin_small_gap: t
+
+let three_d_emboss: t
+
+let three_d_engrave: t
+
 let triple: t
+
 let wave: t

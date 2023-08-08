@@ -23,7 +23,7 @@ external both: t = "BOTH"
 /** Medium Kashida Length */
 @module("docx")
 @scope("AlignmentType")
-external mediumKashida: t = "MEDIUM_KASHIDA"
+external medium_kashida: t = "MEDIUM_KASHIDA"
 
 /** Distribute All Characters Equally */
 @module("docx")
@@ -33,22 +33,22 @@ external distribute: t = "DISTRIBUTE"
 /** Align to List Tab */
 @module("docx")
 @scope("AlignmentType")
-external numTab: t = "NUM_TAB"
+external num_tab: t = "NUM_TAB"
 
 /** Widest Kashida Length */
 @module("docx")
 @scope("AlignmentType")
-external highKashida: t = "HIGH_KASHIDA"
+external high_kashida: t = "HIGH_KASHIDA"
 
 /** Low Kashida Length */
 @module("docx")
 @scope("AlignmentType")
-external lowKashida: t = "LOW_KASHIDA"
+external low_kashida: t = "LOW_KASHIDA"
 
 /** Thai Language Justification */
 @module("docx")
 @scope("AlignmentType")
-external thaiDistribute: t = "THAI_DISTRIBUTE"
+external thai_distribute: t = "THAI_DISTRIBUTE"
 
 /** Align Left */
 @module("docx")
@@ -59,8 +59,3 @@ external left: t = "LEFT"
 @module("docx")
 @scope("AlignmentType")
 external right: t = "RIGHT"
-
-/** Justified */
-@module("docx")
-@scope("AlignmentType")
-external both: t = "JUSTIFIED"
