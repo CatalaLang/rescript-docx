@@ -28,11 +28,12 @@ module LeaderType: {
   let underscore: t
 }
 
+@unwrap
 type numberOrTabStopPosition = Number(float) | TabStopPosition(TabStopPosition.t)
 
 /** @see https://docx.js.org/api/interfaces/TabStopDefinition.html */
 type t = {
-  _type: TabStopType.t,
+  @as("type") _type: TabStopType.t,
   position: numberOrTabStopPosition,
   leader?: LeaderType.t,
 }

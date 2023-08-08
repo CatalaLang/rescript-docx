@@ -337,7 +337,7 @@
 - [ ] `AttributeMap`
 - [ ] `AttributePayload`
 - [ ] `IColumnsAttributes`
-- [ ] `IFrameOptions`
+- [x] `IFrameOptions`
 - [ ] `IPageMarginAttributes`
 - [ ] `IPageSizeAttributes`
 - [ ] `IPatch`
