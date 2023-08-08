@@ -278,7 +278,7 @@
 - [ ] `IHeaderOptions`
 - [ ] `IHorizontalPositionOptions`
 - [ ] `IImageOptions`
-- [ ] `IIndentAttributesProperties`
+- [x] `IIndentAttributesProperties`
 - [ ] `ILevelParagraphStylePropertiesOptions`
 - [ ] `ILevelsOptions`
 - [ ] `ILineNumberAttributes`

@@ -1,3 +1,4 @@
+/** @see https://docx.js.org/api/interfaces/IIndentAttributesProperties.html */
 type t = {
   start?: Util.Types.numberOrUniversalMeasure,
   end?: Util.Types.numberOrUniversalMeasure,
