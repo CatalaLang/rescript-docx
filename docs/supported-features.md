@@ -7,15 +7,15 @@
 - [x] `AlignmentType`
 - [x] `BorderStyle`
 - [ ] `DocumentGridType`
-- [ ] `DropCapType`
+- [x] `DropCapType`
 - [ ] `EmphasisMarkType`
-- [ ] `FrameAnchorType`
-- [ ] `FrameWrap`
+- [x] `FrameAnchorType`
+- [x] `FrameWrap`
 - [ ] `HeaderFooterReferenceType`
 - [ ] `HeaderFooterType`
 - [x] `HeadingLevel`
-- [ ] `HeightRule`
-- [ ] `HorizontalPositionAlign`
+- [x] `HeightRule`
+- [x] `HorizontalPositionAlign`
 - [ ] `HorizontalPositionRelativeFrom`
 - [ ] `HyperlinkType`
 - [x] `LeaderType`
@@ -53,7 +53,7 @@
 - [ ] `UnderlineType`
 - [ ] `VerticalAlign`
 - [ ] `VerticalMergeType`
-- [ ] `VerticalPositionAlign`
+- [x] `VerticalPositionAlign`
 - [ ] `VerticalPositionRelativeFrom`
 - [ ] `WidthType`
 
@@ -250,7 +250,7 @@
 
 ### Interfaces
 
-- [ ] `IAlignmentFrameOptions`
+- [x] `IAlignmentFrameOptions`
 - [ ] `IBaseCharacterStyleOptions`
 - [ ] `IBaseParagraphStyleOptions`
 - [ ] `IBorderOptions`
@@ -324,7 +324,7 @@
 - [ ] `ITableRowPropertiesOptions`
 - [ ] `ITextWrapping`
 - [ ] `IVerticalPositionOptions`
-- [ ] `IXYFrameOptions`
+- [x] `IXYFrameOptions`
 - [ ] `IXmlAttribute`
 - [ ] `IXmlableObject`
 - [ ] `PatchDocumentOptions`
