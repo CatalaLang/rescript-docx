@@ -18,11 +18,11 @@
 - [ ] `HorizontalPositionAlign`
 - [ ] `HorizontalPositionRelativeFrom`
 - [ ] `HyperlinkType`
-- [ ] `LeaderType`
+- [x] `LeaderType`
 - [ ] `LevelFormat`
 - [ ] `LevelSuffix`
 - [ ] `LineNumberRestartFormat`
-- [ ] `LineRuleType`
+- [x] `LineRuleType`
 - [ ] `NumberFormat`
 - [ ] `OverlapType`
 - [ ] `PageBorderDisplay`
@@ -40,10 +40,10 @@
 - [ ] `RelativeHorizontalPosition`
 - [ ] `RelativeVerticalPosition`
 - [ ] `SectionType`
-- [ ] `ShadingType`
+- [x] `ShadingType`
 - [ ] `SpaceType`
-- [ ] `TabStopPosition`
-- [ ] `TabStopType`
+- [x] `TabStopPosition`
+- [x] `TabStopType`
 - [ ] `TableAnchorType`
 - [ ] `TableLayoutType`
 - [ ] `TextDirection`
@@ -310,8 +310,8 @@
 - [ ] `IRunStylePropertiesOptions`
 - [ ] `ISectionOptions`
 - [ ] `ISectionPropertiesOptions`
-- [ ] `IShadingAttributesProperties`
-- [ ] `ISpacingProperties`
+- [x] `IShadingAttributesProperties`
+- [x] `ISpacingProperties`
 - [ ] `IStylesOptions`
 - [ ] `ISymbolRunOptions`
 - [ ] `ITableBordersOptions`
@@ -329,7 +329,7 @@
 - [ ] `IXmlableObject`
 - [ ] `PatchDocumentOptions`
 - [ ] `PositionalTabOptions`
-- [ ] `TabStopDefinition`
+- [x] `TabStopDefinition`
 
 ### Types
 
