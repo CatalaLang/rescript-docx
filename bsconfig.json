@@ -10,5 +10,11 @@
     "module": "es6",
     "in-source": true
   },
-  "suffix": ".bs.js"
+"bs-dependencies": [
+	"@rescript/core"
+  ],
+  "suffix": ".bs.js",
+  "bsc-flags": [
+    "-open RescriptCore"
+  ]
 }
