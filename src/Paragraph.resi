@@ -1,60 +1,67 @@
+type t
+
 type bullet = {level: int}
 
-type numbering = {
-  custom?: bool,
-  instance?: float,
-  level: float,
-  reference: string,
+module Properties: {
+  type levelParagraphStylePropertiesOptions = {
+    alignment?: AlignmentType.t,
+    thematicBreak?: bool,
+    contextualSpacing?: bool,
+    rightTabStop?: float,
+    leftTabStop?: float,
+    indent?: IndentAttributesProperties.t,
+    spacing?: SpacingProperties.t,
+    /**
+     * Specifies that the paragraph (or at least part of it) should be rendered
+     * on the same page as the next paragraph when possible. If multiple
+  	 * paragraphs are to be kept together but they exceed a page, then the set of
+  	 * paragraphs begin on a new page and page breaks are used thereafter as
+  	 * needed.
+  	 */
+    keepNext?: bool,
+    /** Specifies that all lines of the paragraph are to be kept on a single page when possible. */
+    keepLines?: bool,
+    outlineLevel?: float,
+  }
+
+  type paragraphStylePropertiesOptions = {
+    ...levelParagraphStylePropertiesOptions,
+    numbering?: Util.Types.numbering,
+  }
+
+  type paragraphPropertiesOptions = {
+    ...paragraphStylePropertiesOptions,
+    border?: BordersOptions.t,
+    heading?: HeadingLevel.t,
+    bidirectional?: bool,
+    pageBreakBefore?: bool,
+    tabStops?: array<TabStopDefinition.t>,
+    shading?: ShadingAttributesProperties.t,
+    widowControl?: bool,
+    frame?: FrameOptions.t,
+    suppressLineNumbers?: bool,
+    wordWrap?: bool,
+    scale?: float,
+    /**
+	 * This element specifies whether inter-character spacing shall
+	 * automatically be adjusted between regions of numbers and regions of East
+	 * Asian text in the current paragraph. These regions shall be determined by
+	 * the Unicode character values of the text content within the paragraph. This
+	 * only works in Microsoft Word. It is not part of the ECMA-376 OOXML
+	 * standard.
+	 */
+    autoSpaceEastAsianText?: bool,
+  }
 }
 
 type options = {
-  alignment?: AlignmentType.t,
-  /**
-  * This element specifies whether inter-character spacing shall
-  * automatically be adjusted between regions of numbers and regions of East
-  * Asian text in the current paragraph. These regions shall be determined by
-  * the Unicode character values of the text content within the paragraph. This
-  * only works in Microsoft Word. It is not part of the ECMA-376 OOXML
-  * standard.
-  */
-  autoSpaceEastAsianText?: bool,
-  bidirectional?: bool,
-  border?: BordersOptions.t,
-  bullet?: bullet,
-  children?: array<ParagraphChild.t>,
-  contextualSpacing?: bool,
-  frame?: FrameOptions.t,
-  heading?: HeadingLevel.t,
-  indent?: IndentAttributesProperties.t,
-  /** Specifies that all lines of the paragraph are to be kept on a single page when possible. */
-  keepLines?: bool,
-  /**
-  * Specifies that the paragraph (or at least part of it) should be rendered
-  * on the same page as the next paragraph when possible. If multiple
-  * paragraphs are to be kept together but they exceed a page, then the set of
-  * paragraphs begin on a new page and page breaks are used thereafter as
-  * needed.
-  */
-  keepNext?: bool,
-  leftTabStop?: float,
-  numbering?: numbering,
-  outlineLevel?: float,
-  pageBreakBefore?: bool,
-  rightTabStop?: float,
-  scale?: float,
-  shading?: ShadingAttributesProperties.t,
-  spacing?: SpacingProperties.t,
-  style?: string,
-  suppressLineNumbers?: bool,
-  tabStops?: array<TabStopDefinition.t>,
+  ...Properties.paragraphPropertiesOptions,
   text?: string,
-  thematicBreak?: bool,
-  widowControl?: bool,
-  wordWrap?: bool,
+  children?: array<ParagraphChild.t>,
 }
 
 /** Creates a new paragraph with the given text. */
-let make: string => FileChild.t
+let make: string => t
 
 /** Creates a new paragraph with the given [options]. */
-let make': options => FileChild.t
+let make': options => t

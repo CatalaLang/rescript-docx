@@ -1,44 +1,51 @@
+type t
+
 type bullet = {level: int}
 
-type numbering = {
-  custom?: bool,
-  instance?: float,
-  level: float,
-  reference: string,
+module Properties = {
+  type levelParagraphStylePropertiesOptions = {
+    alignment?: AlignmentType.t,
+    thematicBreak?: bool,
+    contextualSpacing?: bool,
+    rightTabStop?: float,
+    leftTabStop?: float,
+    indent?: IndentAttributesProperties.t,
+    spacing?: SpacingProperties.t,
+    keepNext?: bool,
+    keepLines?: bool,
+    outlineLevel?: float,
+  }
+
+  type paragraphStylePropertiesOptions = {
+    ...levelParagraphStylePropertiesOptions,
+    numbering?: Util.Types.numbering,
+  }
+
+  type paragraphPropertiesOptions = {
+    ...paragraphStylePropertiesOptions,
+    border?: BordersOptions.t,
+    heading?: HeadingLevel.t,
+    bidirectional?: bool,
+    pageBreakBefore?: bool,
+    tabStops?: array<TabStopDefinition.t>,
+    shading?: ShadingAttributesProperties.t,
+    widowControl?: bool,
+    frame?: FrameOptions.t,
+    suppressLineNumbers?: bool,
+    wordWrap?: bool,
+    scale?: float,
+    autoSpaceEastAsianText?: bool,
+  }
 }
 
 type options = {
-  alignment?: AlignmentType.t,
-  autoSpaceEastAsianText?: bool,
-  bidirectional?: bool,
-  border?: BordersOptions.t,
-  bullet?: bullet,
-  children?: array<ParagraphChild.t>,
-  contextualSpacing?: bool,
-  frame?: FrameOptions.t,
-  heading?: HeadingLevel.t,
-  indent?: IndentAttributesProperties.t,
-  keepLines?: bool,
-  keepNext?: bool,
-  leftTabStop?: float,
-  numbering?: numbering,
-  outlineLevel?: float,
-  pageBreakBefore?: bool,
-  rightTabStop?: float,
-  scale?: float,
-  shading?: ShadingAttributesProperties.t,
-  spacing?: SpacingProperties.t,
-  style?: string,
-  suppressLineNumbers?: bool,
-  tabStops?: array<TabStopDefinition.t>,
+  ...Properties.paragraphPropertiesOptions,
   text?: string,
-  thematicBreak?: bool,
-  widowControl?: bool,
-  wordWrap?: bool,
+  children?: array<ParagraphChild.t>,
 }
 
 @module("docx") @new
-external make: string => FileChild.t = "Paragraph"
+external make: string => t = "Paragraph"
 
 @module("docx") @new
-external make': options => FileChild.t = "Paragraph"
+external make': options => t = "Paragraph"
