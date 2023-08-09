@@ -8,7 +8,7 @@
 - [x] `BorderStyle`
 - [ ] `DocumentGridType`
 - [x] `DropCapType`
-- [ ] `EmphasisMarkType`
+- [x] `EmphasisMarkType`
 - [x] `FrameAnchorType`
 - [x] `FrameWrap`
 - [ ] `HeaderFooterReferenceType`
@@ -19,8 +19,8 @@
 - [ ] `HorizontalPositionRelativeFrom`
 - [ ] `HyperlinkType`
 - [x] `LeaderType`
-- [ ] `LevelFormat`
-- [ ] `LevelSuffix`
+- [x] `LevelFormat`
+- [x] `LevelSuffix`
 - [ ] `LineNumberRestartFormat`
 - [x] `LineRuleType`
 - [ ] `NumberFormat`
@@ -248,11 +248,11 @@
 ### Interfaces
 
 - [x] `IAlignmentFrameOptions`
-- [ ] `IBaseCharacterStyleOptions`
-- [ ] `IBaseParagraphStyleOptions`
-- [ ] `IBorderOptions`
-- [ ] `IBordersOptions`
-- [ ] `ICharacterStyleOptions`
+- [x] `IBaseCharacterStyleOptions`
+- [x] `IBaseParagraphStyleOptions`
+- [x] `IBorderOptions`
+- [x] `IBordersOptions`
+- [x] `ICharacterStyleOptions`
 - [ ] `ICheckboxSymbolOptions`
 - [ ] `ICheckboxSymbolProperties`
 - [ ] `ICommentOptions`
@@ -263,13 +263,13 @@
 - [ ] `IDocGridAttributesProperties`
 - [ ] `IDocumentAttributesProperties`
 - [ ] `IDocumentBackgroundOptions`
-- [ ] `IDocumentDefaultsOptions`
+- [x] `IDocumentDefaultsOptions`
 - [ ] `IDocumentFooter`
 - [ ] `IDocumentHeader`
 - [ ] `IDocumentOptions`
 - [ ] `IDrawingOptions`
 - [ ] `IFloating`
-- [ ] `IFontAttributesProperties`
+- [x] `IFontAttributesProperties`
 - [ ] `IHeaderFooterGroup`
 - [ ] `IHeaderFooterOptions`
 - [ ] `IHeaderOptions`
@@ -277,7 +277,7 @@
 - [ ] `IImageOptions`
 - [x] `IIndentAttributesProperties`
 - [x] `ILevelParagraphStylePropertiesOptions`
-- [ ] `ILevelsOptions`
+- [x] `ILevelsOptions`
 - [ ] `ILineNumberAttributes`
 - [ ] `IMargins`
 - [ ] `IMathFractionOptions`
@@ -293,7 +293,7 @@
 - [ ] `IMediaData`
 - [ ] `IMediaDataTransformation`
 - [ ] `IMediaTransformation`
-- [ ] `INumberingOptions`
+- [x] `INumberingOptions`
 - [ ] `IPageBorderAttributes`
 - [ ] `IPageBordersOptions`
 - [ ] `IPageNumberTypeAttributes`
@@ -304,12 +304,12 @@
 - [ ] `IRunOptions`
 - [ ] `IRunPropertiesChangeOptions`
 - [ ] `IRunPropertiesOptions`
-- [ ] `IRunStylePropertiesOptions`
+- [x] `IRunStylePropertiesOptions`
 - [ ] `ISectionOptions`
 - [ ] `ISectionPropertiesOptions`
 - [x] `IShadingAttributesProperties`
 - [x] `ISpacingProperties`
-- [ ] `IStylesOptions`
+- [x] `IStylesOptions`
 - [ ] `ISymbolRunOptions`
 - [ ] `ITableBordersOptions`
 - [ ] `ITableCellBorders`

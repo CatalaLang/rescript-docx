@@ -1,29 +1,4 @@
-type style = {
-  id?: string,
-  name?: string,
-  basedOn?: string,
-  next?: string,
-  quickFormat?: bool,
-  run?: TextRun.options,
-  paragraph?: Paragraph.options,
-}
-
-type rec defaultStylesOptions = {
-  document?: documentDefaultOptions,
-  heading1?: style,
-  heading2?: style,
-  heading3?: style,
-  heading4?: style,
-  heading5?: style,
-  heading6?: style,
-  hyperlink?: style,
-  paragraphList?: style,
-}
-and documentDefaultOptions = {
-  paragraph?: paragraphStylesPropertiesOptions,
-  run?: RunStylePropertiesOptions.t,
-}
-and paragraphStylesPropertiesOptions = {
+type paragraphStylesPropertiesOptions = {
   alignment?: AlignmentType.t,
   contextualSpacing?: bool,
   indent?: IndentAttributesProperties.t,
@@ -35,10 +10,53 @@ and paragraphStylesPropertiesOptions = {
   numbering?: Util.Types.numbering,
 }
 
+type baseCharacterStyleOptions = {
+  ...StyleOptions.t,
+  run?: RunStylePropertiesOptions.t,
+}
+
+type baseParagraphStyleOptions = {
+  ...StyleOptions.t,
+  paragraph?: paragraphStylesPropertiesOptions,
+  run?: RunStylePropertiesOptions.t,
+}
+
+type documentDefaultOptions = {
+  paragraph?: paragraphStylesPropertiesOptions,
+  run?: RunStylePropertiesOptions.t,
+}
+
+type defaultStylesOptions = {
+  document?: documentDefaultOptions,
+  title?: baseParagraphStyleOptions,
+  heading1?: baseParagraphStyleOptions,
+  heading2?: baseParagraphStyleOptions,
+  heading3?: baseParagraphStyleOptions,
+  heading4?: baseParagraphStyleOptions,
+  heading5?: baseParagraphStyleOptions,
+  heading6?: baseParagraphStyleOptions,
+  strong?: baseParagraphStyleOptions,
+  listParagraph?: baseParagraphStyleOptions,
+  hyperlink?: baseCharacterStyleOptions,
+  footnoteReference?: baseCharacterStyleOptions,
+  footnoteText?: baseParagraphStyleOptions,
+  footnoteTextChar?: baseCharacterStyleOptions,
+}
+
+type characterStyleOptions = {
+  ...baseCharacterStyleOptions,
+  id: string,
+}
+
+type paragraphStyleOptions = {
+  ...baseParagraphStyleOptions,
+  id: string,
+}
+
 type t = {
-  // characterStyles?: array<characterStyleOptions>,
   default?: defaultStylesOptions,
-  // paragraphStyles?: array<paragraphStyleOptions>,
+  characterStyles?: array<characterStyleOptions>,
+  paragraphStyles?: array<paragraphStyleOptions>,
   // TODO:
   // initialStyles?:
   // importedStyles?:
