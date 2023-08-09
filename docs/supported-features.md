@@ -50,7 +50,7 @@
 - [ ] `TextEffect`
 - [ ] `TextWrappingSide`
 - [ ] `TextWrappingType`
-- [ ] `UnderlineType`
+- [x] `UnderlineType`
 - [ ] `VerticalAlign`
 - [ ] `VerticalMergeType`
 - [x] `VerticalPositionAlign`
@@ -276,7 +276,7 @@
 - [ ] `IHorizontalPositionOptions`
 - [ ] `IImageOptions`
 - [x] `IIndentAttributesProperties`
-- [ ] `ILevelParagraphStylePropertiesOptions`
+- [x] `ILevelParagraphStylePropertiesOptions`
 - [ ] `ILevelsOptions`
 - [ ] `ILineNumberAttributes`
 - [ ] `IMargins`
@@ -297,10 +297,10 @@
 - [ ] `IPageBorderAttributes`
 - [ ] `IPageBordersOptions`
 - [ ] `IPageNumberTypeAttributes`
-- [ ] `IParagraphOptions`
-- [ ] `IParagraphPropertiesOptions`
+- [x] `IParagraphOptions`
+- [x] `IParagraphPropertiesOptions`
 - [ ] `IParagraphStyleOptions`
-- [ ] `IParagraphStylePropertiesOptions`
+- [x] `IParagraphStylePropertiesOptions`
 - [ ] `IRunOptions`
 - [ ] `IRunPropertiesChangeOptions`
 - [ ] `IRunPropertiesOptions`
