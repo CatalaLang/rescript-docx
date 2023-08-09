@@ -32,6 +32,11 @@ See which features are covered in the dedicated [doc file](https://github.com/Em
 
 For the binding, several conventions has been used:
 
+### Primitives
+
+By default JavaScript `number` are converted to `float`, but if it's expected
+to be integers then to `int`.
+
 ### Enums
 
 Enums are implemented as modules with a `t` type and functions with the name of
@@ -42,6 +47,7 @@ the enum in lowercase.
 enum AlignmentType = {
     START = "start",
     CENTER = "center",
+    NUM_TAB = "numTab",
     ...
 }
 ```
@@ -51,8 +57,13 @@ enum AlignmentType = {
 type t
 let start: t
 let center: t
+let num_tab: t
 ...
 ```
+
+> 🔜 In the incoming ReScript 11.0, this could be done more cleanly by using
+> the new [tagged
+> variants](https://rescript-lang.org/blog/improving-interop#binding-to-typescript-enums).
 
 ### Polymorphic constructors 
 
@@ -82,8 +93,8 @@ let q = Paragraph.make'({
 
 ### Inline variant types
 
-TypeScript variant types are modelized with an [unboxed ReScript
-variant](https://rescript-lang.org/docs/manual/latest/unboxed):
+TypeScript inline variant types are encoded with an [unwrapped ReScript
+variant](https://rescript-lang.org/docs/manual/latest/bind-to-js-function#trick-2-polymorphic-variant--unwrap):
 
 ```typescript
 // TypeScript variant
@@ -94,10 +105,21 @@ type t = {
 
 ```rescript
 // In ReScript
-@unboxed
+@unwrap
 type numberOrString = Number(float) | String(string)
 
 type t = {
     value: numberOrString
 }
 ```
+
+> 🔜 In  incoming ReScript 11, this could be done more cleanly by using the new
+> [untagged
+> variants](https://rescript-lang.org/blog/improving-interop#untagged-variants).
+
+### Reserved keywords
+
+Some used JavaScript attributes are reserved keywords in ReScript, consequently, they are
+prefixed by `_`.
+
+For example, the attribute `type` is `_type`.
