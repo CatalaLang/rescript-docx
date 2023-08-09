@@ -106,15 +106,14 @@
 - [ ] `ExternalHyperlink`
 - [ ] `FootNoteReferenceRunAttributes`
 - [ ] `FootNotes`
-- [ ] `Footer`
-- [ ] `FooterWrapper`
+- [x] `Footer`
 - [ ] `FootnoteReference`
 - [ ] `FootnoteReferenceElement`
 - [ ] `FootnoteReferenceRun`
 - [ ] `FrameProperties`
 - [ ] `FramePropertiesAttributes`
 - [ ] `GridSpan`
-- [ ] `Header`
+- [x] `Header`
 - [ ] `HeaderFooterReference`
 - [ ] `HeaderWrapper`
 - [ ] `HorizontalPosition`
@@ -185,9 +184,7 @@
 - [ ] `PageReference`
 - [ ] `PageSize`
 - [ ] `PageTextDirection`
-- [ ] `Paragraph`
-- [ ] `ParagraphProperties`
-- [ ] `ParagraphPropertiesDefaults`
+- [x] `Paragraph`
 - [ ] `PositionalTab`
 - [ ] `Run`
 - [ ] `RunFonts`
@@ -344,7 +341,7 @@
 - [ ] `ITableFloatOptions`
 - [ ] `ITableWidthProperties`
 - [ ] `MathComponent`
-- [ ] `ParagraphChild`
+- [x] `ParagraphChild`
 - [ ] `Percentage`
 - [x] `PositiveUniversalMeasure`
 - [ ] `UniqueNumericIdCreator`
