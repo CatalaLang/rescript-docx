@@ -255,8 +255,8 @@
 - [x] `ICharacterStyleOptions`
 - [ ] `ICheckboxSymbolOptions`
 - [ ] `ICheckboxSymbolProperties`
-- [ ] `ICommentOptions`
-- [ ] `ICommentsOptions`
+- [x] `ICommentOptions`
+- [x] `ICommentsOptions`
 - [ ] `IConcreteNumberingOptions`
 - [ ] `IContext`
 - [ ] `IDistance`
