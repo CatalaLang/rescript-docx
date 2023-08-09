@@ -47,7 +47,7 @@
 - [ ] `TableAnchorType`
 - [ ] `TableLayoutType`
 - [ ] `TextDirection`
-- [ ] `TextEffect`
+- [x] `TextEffect`
 - [ ] `TextWrappingSide`
 - [ ] `TextWrappingType`
 - [x] `UnderlineType`
