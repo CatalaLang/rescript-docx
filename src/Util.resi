@@ -12,4 +12,17 @@ module Types: {
   type numberOrPositiveUniversalMeasure =
     | Number(float)
     | PositiveUniversalMeasure(positiveUniversalMeasure)
+
+  @unwrap
+  type boolOrNumberOrUniversalMeasure =
+    | Bool(bool)
+    | Number(float)
+    | PositiveUniversalMeasure(universalMeasure)
+
+  type numbering = {
+    custom?: bool,
+    instance?: float,
+    level: float,
+    reference: string,
+  }
 }
