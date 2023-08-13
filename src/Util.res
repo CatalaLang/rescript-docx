@@ -1,6 +1,8 @@
 module Types = {
+  // TODO: could be more precise?
   type universalMeasure = string
 
+  // TODO: could be more precise?
   type positiveUniversalMeasure = string
 
   @unwrap

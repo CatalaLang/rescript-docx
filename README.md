@@ -28,7 +28,7 @@ yarn add -D rescript-docx
 
 See which features are covered in the dedicated [doc file](https://github.com/EmileRolley/rescript-docx/blob/main/docs/supported-features.md).
 
-* [ ] `Document`
+* [x] `Document`
 * [ ] `Paragraph`
 * [ ] `Text`
 * [ ] `Images`

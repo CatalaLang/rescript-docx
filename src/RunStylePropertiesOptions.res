@@ -12,10 +12,10 @@ type fontAttributesProperties = {
 
 type underline = {
   color?: string,
-  @as("type") _type?: UnderlineType.t,
+  @as("type") type_?: UnderlineType.t,
 }
 
-type emphasisMark = {@as("type") _type?: EmphasisMarkType.t}
+type emphasisMark = {@as("type") type_?: EmphasisMarkType.t}
 
 type languageOptions = {
   value?: string,
