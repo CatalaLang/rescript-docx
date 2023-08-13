@@ -28,6 +28,22 @@ yarn add -D rescript-docx
 
 See which features are covered in the dedicated [doc file](https://github.com/EmileRolley/rescript-docx/blob/main/docs/supported-features.md).
 
+* [ ] `Document`
+* [ ] `Paragraph`
+* [ ] `Text`
+* [ ] `Images`
+* [ ] `Hyperlinks`
+* [ ] `Numbering`
+* [ ] `Table`
+    * [x] `Column`
+* [ ] `Tabs`
+* [ ] `TableOfContents`
+* [ ] `Math`
+* [ ] `Comments`
+* [ ] `Footnotes`
+* [ ] `Packers`
+
+
 ## Binding convention import
 
 For the binding, several conventions has been used:
@@ -120,6 +136,13 @@ type t = {
 ### Reserved keywords
 
 Some used JavaScript attributes are reserved keywords in ReScript, consequently, they are
-prefixed by `_`.
+postfixed by `_`.
 
-For example, the attribute `type` is `_type`.
+For example, the attribute `type` is `type_`.
+
+### Interface inheritance
+
+> 🔜 In the incoming ReScript 11.0, using [record type
+> spread](https://rescript-lang.org/blog/enhanced-ergonomics-for-record-types#record-type-spread)
+> will allows to factorizes interface inheritance.
+
