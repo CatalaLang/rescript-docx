@@ -16,7 +16,6 @@
   "author": "Emile Rolley <emile.rolley@tuta.io>",
   "license": "MIT",
   "devDependencies": {
-    "@rescript/core": "^0.5.0",
     "docx": "^8.2.2",
     "rescript": "^11.0.0-beta.4"
   }

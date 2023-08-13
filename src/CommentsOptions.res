@@ -3,7 +3,7 @@ type commentOptions = {
   children: array<FileChild.t>,
   initials?: string,
   author?: string,
-  date?: Date.t,
+  date?: Js.Date.t,
 }
 
 type t = {children: array<commentOptions>}
