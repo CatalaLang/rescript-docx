@@ -17,6 +17,8 @@
   "license": "MIT",
   "devDependencies": {
     "docx": "^8.2.2",
-    "rescript": "^11.0.0-beta.4"
+    "file-saver": "^2.0.5",
+    "rescript": "^11.0.0-beta.4",
+    "rescript-nodejs": "^15.0.0"
   }
 }

@@ -23,6 +23,11 @@ docx@^8.2.2:
     xml "^1.0.1"
     xml-js "^1.6.8"
 
+file-saver@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/file-saver/-/file-saver-2.0.5.tgz#d61cfe2ce059f414d899e9dd6d4107ee25670c38"
+  integrity sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==
+
 immediate@~3.0.5:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
@@ -82,6 +87,11 @@ readable-stream@~2.3.6:
     safe-buffer "~5.1.1"
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
+
+rescript-nodejs@^15.0.0:
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/rescript-nodejs/-/rescript-nodejs-15.0.0.tgz#f62253f61808131ae3c6176411b88d60299e456d"
+  integrity sha512-VvvM8/lI90Dfu0x4886NyINbUcBBx8F6hmftH9UaMjUgYIPfsdVopG3d30OzcbroiOKySgo4wwVNEmtYDZs+nw==
 
 rescript@^11.0.0-beta.4:
   version "11.0.0-beta.4"

@@ -2,14 +2,21 @@
   "name": "rescript-docx",
   "namespace": "docx",
   "version": "0.1.0",
-  "sources": {
-    "dir": "src",
-    "subdirs": true
-  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "examples",
+      "type": "dev",
+      "subdirs": true
+    }
+  ],
   "package-specs": {
-    "module": "es6",
+    "module": "commonjs",
     "in-source": true
   },
-  "bs-dependencies": [],
+  "bs-dev-dependencies": ["rescript-nodejs"],
   "suffix": ".bs.js"
 }
