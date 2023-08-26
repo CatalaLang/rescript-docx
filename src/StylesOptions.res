@@ -11,12 +11,44 @@ type paragraphStylesPropertiesOptions = {
 }
 
 type baseCharacterStyleOptions = {
-  ...StyleOptions.t,
+  /* -> to factorizes with the v11 record type spread notation */
+  name?: string,
+  /**
+   * Specifies the style upon which the current style is based-that is, the style from which the current style inherits. It is the mechanism for implementing style inheritance.
+   * Note that if the type of the current style must match the type of the style upon which it is based or the basedOn element will be ignored.
+   * However, if the current style is a floating style, then the `basedOn` element is ignored.
+   *
+   * **WARNING**: You cannot set `basedOn` to be the same as `name`. This is akin to inheriting from itself. This creates a cyclic dependency and cause undesirable behavior.
+   */
+  basedOn?: string,
+  next?: string,
+  link?: string,
+  uiPriority?: float,
+  semiHidden?: bool,
+  unhideWhenUsed?: bool,
+  quickFormat?: bool,
+  /* <- */
   run?: RunStylePropertiesOptions.t,
 }
 
 type baseParagraphStyleOptions = {
-  ...StyleOptions.t,
+  /* -> to factorizes with the v11 record type spread notation */
+  name?: string,
+  /**
+   * Specifies the style upon which the current style is based-that is, the style from which the current style inherits. It is the mechanism for implementing style inheritance.
+   * Note that if the type of the current style must match the type of the style upon which it is based or the basedOn element will be ignored.
+   * However, if the current style is a floating style, then the `basedOn` element is ignored.
+   *
+   * **WARNING**: You cannot set `basedOn` to be the same as `name`. This is akin to inheriting from itself. This creates a cyclic dependency and cause undesirable behavior.
+   */
+  basedOn?: string,
+  next?: string,
+  link?: string,
+  uiPriority?: float,
+  semiHidden?: bool,
+  unhideWhenUsed?: bool,
+  quickFormat?: bool,
+  /* <- */
   paragraph?: paragraphStylesPropertiesOptions,
   run?: RunStylePropertiesOptions.t,
 }
@@ -44,12 +76,47 @@ type defaultStylesOptions = {
 }
 
 type characterStyleOptions = {
-  ...baseCharacterStyleOptions,
+  /* -> to factorizes with the v11 record type spread notation */
+  name?: string,
+  /**
+   * Specifies the style upon which the current style is based-that is, the style from which the current style inherits. It is the mechanism for implementing style inheritance.
+   * Note that if the type of the current style must match the type of the style upon which it is based or the basedOn element will be ignored.
+   * However, if the current style is a floating style, then the `basedOn` element is ignored.
+   *
+   * **WARNING**: You cannot set `basedOn` to be the same as `name`. This is akin to inheriting from itself. This creates a cyclic dependency and cause undesirable behavior.
+   */
+  basedOn?: string,
+  next?: string,
+  link?: string,
+  uiPriority?: float,
+  semiHidden?: bool,
+  unhideWhenUsed?: bool,
+  quickFormat?: bool,
+  run?: RunStylePropertiesOptions.t,
+  /* <- */
   id: string,
 }
 
 type paragraphStyleOptions = {
-  ...baseParagraphStyleOptions,
+  /* -> to factorizes with the v11 record type spread notation */
+  name?: string,
+  /**
+   * Specifies the style upon which the current style is based-that is, the style from which the current style inherits. It is the mechanism for implementing style inheritance.
+   * Note that if the type of the current style must match the type of the style upon which it is based or the basedOn element will be ignored.
+   * However, if the current style is a floating style, then the `basedOn` element is ignored.
+   *
+   * **WARNING**: You cannot set `basedOn` to be the same as `name`. This is akin to inheriting from itself. This creates a cyclic dependency and cause undesirable behavior.
+   */
+  basedOn?: string,
+  next?: string,
+  link?: string,
+  uiPriority?: float,
+  semiHidden?: bool,
+  unhideWhenUsed?: bool,
+  quickFormat?: bool,
+  paragraph?: paragraphStylesPropertiesOptions,
+  run?: RunStylePropertiesOptions.t,
+  /* <- */
   id: string,
 }
 
