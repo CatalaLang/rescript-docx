@@ -30,7 +30,7 @@ See which features are covered in the dedicated [doc file](https://github.com/Em
 
 * [x] `Document`
 * [ ] `Paragraph`
-* [ ] `Text`
+* [ ] `TextRun` [WIP]
 * [ ] `Images`
 * [ ] `Hyperlinks`
 * [ ] `Numbering`
@@ -54,6 +54,8 @@ to be integers then to `int`.
 
 ### Enums
 
+> TODO: choose between this implementation or using polymorphic variants
+
 Enums are implemented as modules with a `t` type and functions with the name of
 the enum in lowercase.
 
@@ -76,7 +78,7 @@ let num_tab: t
 ...
 ```
 
-> 🔜 In the incoming ReScript 11.0, this could be done more cleanly by using
+> 🔜 In the incoming ReScript 11.0, this could be done cleaner by using
 > the new [tagged
 > variants](https://rescript-lang.org/blog/improving-interop#binding-to-typescript-enums).
 
@@ -108,8 +110,7 @@ let q = Paragraph.make'({
 
 ### Inline variant types
 
-TypeScript inline variant types are encoded with an [unwrapped ReScript
-variant](https://rescript-lang.org/docs/manual/latest/bind-to-js-function#trick-2-polymorphic-variant--unwrap):
+TypeScript inline variant types are encoded in a dedicated module in `Util.Types` as:
 
 ```typescript
 // TypeScript variant
@@ -120,15 +121,16 @@ type t = {
 
 ```rescript
 // In ReScript
-@unwrap
-type numberOrString = Number(float) | String(string)
+open Util
 
-type t = {
-    value: numberOrString
-}
+type t = { value: Types.NumberOrString.t }
+
+let float: t = { value: Types.NumberOrString.fromFloat(10.0) }
+
+let string: t = { value: Types.NumberOrString.fromString("Hello") }
 ```
 
-> 🔜 In  incoming ReScript 11, this could be done more cleanly by using the new
+> 🔜 In the incoming ReScript 11, this could be done more simply by using the new
 > [untagged
 > variants](https://rescript-lang.org/blog/improving-interop#untagged-variants).
 
@@ -144,4 +146,3 @@ For example, the attribute `type` is `type_`.
 > 🔜 In the incoming ReScript 11.0, using [record type
 > spread](https://rescript-lang.org/blog/enhanced-ergonomics-for-record-types#record-type-spread)
 > will allows to factorizes interface inheritance.
-
