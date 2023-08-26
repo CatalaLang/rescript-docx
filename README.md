@@ -12,11 +12,28 @@
    <a href="https://docx.js.org">docx.js</a>
   </p>
 
-![CI][ci-link] ![NPM][npm-link]
+<!-- ![CI][ci-link] ![NPM][npm-link] -->
 
   A ReScript wrapper for the [`docx`](https://docx.js.org/) JS/TS library.
 
 </div>
+
+## Table Of Contents
+
+<!-- vim-markdown-toc Marked -->
+
+* [Usage](#usage)
+    * [Examples](#examples)
+* [API coverage](#api-coverage)
+* [Binding conventions](#binding-conventions)
+    * [Primitives](#primitives)
+    * [Enums](#enums)
+    * [Polymorphic constructors](#polymorphic-constructors)
+    * [Inline variant types](#inline-variant-types)
+    * [Reserved keywords](#reserved-keywords)
+    * [Interface inheritance](#interface-inheritance)
+
+<!-- vim-markdown-toc -->
 
 ## Usage
 
@@ -24,26 +41,42 @@
 yarn add -D rescript-docx
 ```
 
+### Examples
+
+Some examples are available in
+[`examples/`](https://github.com/EmileRolley/rescript-docx/blob/main/examples).
+To run them simply:
+
+```bash
+# Compile the project with the dependencies
+yarn && yarn build
+
+# Run the compiled JS file with Node
+npx node examples/<fileName>.bs.js
+
+# The result is stored in the root with the corresponding name: <fileName>.docx
+```
+
 ## API coverage
 
 See which features are covered in the dedicated [doc file](https://github.com/EmileRolley/rescript-docx/blob/main/docs/supported-features.md).
 
-* [x] `Document`
-* [ ] `Paragraph`
-* [ ] `TextRun` [WIP]
-* [ ] `Images`
-* [ ] `Hyperlinks`
-* [ ] `Numbering`
-* [ ] `Table`
-    * [x] `Column`
-* [ ] `Tabs`
-* [ ] `TableOfContents`
-* [ ] `Math`
-* [ ] `Comments`
-* [ ] `Footnotes`
-* [x] `Packers`
+* ✅ `Document`
+* ✅ `Headers`
+* ✅ `Packers`
+* ✅ `Paragraph`
+* ❌ `Comments`
+* ❌ `Footnotes`
+* ❌ `Hyperlinks`
+* ❌ `Images`
+* ❌ `Math`
+* ❌ `Numbering`
+* 🚧 `Table`
+* ❌ `TableOfContents`
+* ❌ `Tabs`
+* 🚧 `TextRun`
 
-## Binding convention import
+## Binding conventions
 
 For the binding, several conventions has been used:
 
