@@ -1,9 +1,11 @@
+open Util
+
 type t = {
-  top?: Util.Types.numberOrUniversalMeasure,
-  right?: Util.Types.numberOrPositiveUniversalMeasure,
-  bottom?: Util.Types.numberOrUniversalMeasure,
-  left?: Util.Types.numberOrPositiveUniversalMeasure,
-  header?: Util.Types.numberOrPositiveUniversalMeasure,
-  footer?: Util.Types.numberOrPositiveUniversalMeasure,
-  gutter?: Util.Types.numberOrPositiveUniversalMeasure,
+  top?: Types.NumberOrUniversalMeasure.t,
+  right?: Types.NumberOrPositiveUniversalMeasure.t,
+  bottom?: Types.NumberOrUniversalMeasure.t,
+  left?: Types.NumberOrPositiveUniversalMeasure.t,
+  header?: Types.NumberOrPositiveUniversalMeasure.t,
+  footer?: Types.NumberOrPositiveUniversalMeasure.t,
+  gutter?: Types.NumberOrPositiveUniversalMeasure.t,
 }

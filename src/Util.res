@@ -1,23 +1,33 @@
 module Types = {
-  // TODO: could be more precise?
-  type universalMeasure = string
+  // TODO: should be more precise and model the fact that the value could be a 'positive' universal measure
+  module NumberOrUniversalMeasure = {
+    type t
 
-  // TODO: could be more precise?
-  type positiveUniversalMeasure = string
+    external fromFloat: float => t = "%identity"
+    external fromString: string => t = "%identity"
+  }
 
-  @unwrap
-  type numberOrUniversalMeasure = Number(float) | UniversalMeasure(universalMeasure)
+  module NumberOrPositiveUniversalMeasure = {
+    type t
 
-  @unwrap
-  type numberOrPositiveUniversalMeasure =
-    | Number(float)
-    | PositiveUniversalMeasure(positiveUniversalMeasure)
+    external fromFloat: float => t = "%identity"
+    external fromString: string => t = "%identity"
+  }
 
-  @unwrap
-  type boolOrNumberOrUniversalMeasure =
-    | Bool(bool)
-    | Number(float)
-    | PositiveUniversalMeasure(universalMeasure)
+  module BoolOrNumberOrUniversalMeasure = {
+    type t
+
+    external fromBool: bool => t = "%identity"
+    external fromFloat: float => t = "%identity"
+    external fromString: string => t = "%identity"
+  }
+
+  module BoolOrString = {
+    type t
+
+    external fromBool: bool => t = "%identity"
+    external fromString: string => t = "%identity"
+  }
 
   type numbering = {
     custom?: bool,

@@ -1,5 +1,7 @@
+open Util
+
 type t = {
-  width?: Util.Types.numberOrPositiveUniversalMeasure,
-  height?: Util.Types.numberOrPositiveUniversalMeasure,
+  width?: Types.NumberOrPositiveUniversalMeasure.t,
+  height?: Types.NumberOrPositiveUniversalMeasure.t,
   orientation?: PageOrientation.t,
 }

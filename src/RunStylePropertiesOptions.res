@@ -1,14 +1,4 @@
-type fontOptions = {
-  name: string,
-  hint?: string,
-}
-
-type fontAttributesProperties = {
-  ascii?: string,
-  eastAsia?: string,
-  hAnsi?: string,
-  cs?: string,
-}
+open Util
 
 type underline = {
   color?: string,
@@ -33,10 +23,10 @@ type t = {
   effect?: TextEffect.t,
   emphasisMark?: emphasisMark,
   color?: string,
-  kern?: Util.Types.numberOrPositiveUniversalMeasure,
-  position?: Util.Types.universalMeasure,
-  size?: Util.Types.numberOrPositiveUniversalMeasure,
-  sizeComplexScript?: Util.Types.boolOrNumberOrUniversalMeasure,
+  kern?: Types.NumberOrPositiveUniversalMeasure.t,
+  position?: Types.NumberOrUniversalMeasure.t,
+  size?: Types.NumberOrPositiveUniversalMeasure.t,
+  sizeComplexScript?: Types.BoolOrNumberOrUniversalMeasure.t,
   rightToLeft?: bool,
   smallCaps?: bool,
   allCaps?: bool,
@@ -44,14 +34,9 @@ type t = {
   doubleStrike?: bool,
   subScript?: bool,
   superScript?: bool,
-  font?: @unwrap
-  [
-    | #String(string)
-    | #FontOptions(fontOptions)
-    | #FontAttributesProperties(fontAttributesProperties)
-  ],
+  font?: Font.t,
   highlight?: string,
-  highlightComplexScript?: @unwrap [#Bool(bool) | #String(string)],
+  highlightComplexScript?: Types.BoolOrString.t,
   characterSpacing?: float,
   shading?: ShadingAttributesProperties.t,
   emboss?: bool,

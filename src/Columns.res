@@ -1,7 +1,9 @@
+open Util
+
 type t
 
 type attributes = {
-  space?: Util.Types.numberOrPositiveUniversalMeasure,
+  space?: Types.NumberOrPositiveUniversalMeasure.t,
   count?: float,
   separate?: bool,
   equalWidth?: bool,

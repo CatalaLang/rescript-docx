@@ -1,8 +1,10 @@
+open Util
+
 type t
 
 type attributes = {
-  width: Util.Types.numberOrPositiveUniversalMeasure,
-  space?: Util.Types.numberOrPositiveUniversalMeasure,
+  width: Types.NumberOrPositiveUniversalMeasure.t,
+  space?: Types.NumberOrPositiveUniversalMeasure.t,
 }
 
 @module("docx") @new

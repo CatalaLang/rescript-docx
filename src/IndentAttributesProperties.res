@@ -1,9 +1,11 @@
+open Util
+
 /** @see https://docx.js.org/api/interfaces/IIndentAttributesProperties.html */
 type t = {
-  start?: Util.Types.numberOrUniversalMeasure,
-  end?: Util.Types.numberOrUniversalMeasure,
-  left?: Util.Types.numberOrUniversalMeasure,
-  right?: Util.Types.numberOrUniversalMeasure,
-  hanging?: Util.Types.numberOrPositiveUniversalMeasure,
-  firstLine?: Util.Types.numberOrPositiveUniversalMeasure,
+  start?: Types.NumberOrUniversalMeasure.t,
+  end?: Types.NumberOrUniversalMeasure.t,
+  left?: Types.NumberOrUniversalMeasure.t,
+  right?: Types.NumberOrUniversalMeasure.t,
+  hanging?: Types.NumberOrPositiveUniversalMeasure.t,
+  firstLine?: Types.NumberOrPositiveUniversalMeasure.t,
 }
