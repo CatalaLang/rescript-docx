@@ -1,7 +1,7 @@
 /**
 * Represents the [FileChild] classes.
 */
-type t = P(Paragraph.t) | T(Table.t) /* | Toc(Toc.t) */
+type t
 
 /** Creates a new [Paragraph.t] */
 let p: string => t

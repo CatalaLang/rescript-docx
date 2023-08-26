@@ -1,8 +1,5 @@
-@unwrap
-type paragraphOrTable = Paragraph(Paragraph.t) | Table(Table.t)
-
 /** @see https://docx.js.org/api/interfaces/IHeaderOptions.html */
-type headerOptions = {children: array<paragraphOrTable>}
+type headerOptions = {children: array<FileChild.t>}
 
 type headerFooterGroup<'a> = {
   default?: 'a,
