@@ -1,7 +1,7 @@
 {
   "name": "rescript-docx",
   "description": "ReScript bindings for the docx.js lib",
-  "version": "0.1.0",
+  "version": "0.1.1-0",
   "scripts": {
     "clean": "rescript clean",
     "build": "rescript build",
