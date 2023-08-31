@@ -75,16 +75,12 @@ See which features are covered in the dedicated [doc file](https://github.com/Em
 * 🚧 Sections
 * ✅ Paragraph
 * 🚧 Text
-* ❌ Images
+* 🚧 Images (_Missing correct modelization of the `ImageRun.options.data` type_)
 * ✅ Headers & Footers
 * ❌ Bullet Points
 * ✅ Hyperlinks
 * ❌ Numbering
-* 🚧 Tables
-    * ✅ Table
-    * ✅ TableCell
-    * ✅ TableRow
-    * ❌ TableColumn
+* ✅ Tables
 * ❌ Tabs
 * ❌ Table Of Contents
 * ✅ Page Numbers
