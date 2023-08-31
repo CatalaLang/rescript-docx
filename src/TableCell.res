@@ -10,20 +10,11 @@ type tableCellBorders = {
   start?: BorderOptions.t,
 }
 
-type tableCellMarginOptions = {
-  marginUnitType?: WidthType.t,
-  top?: float,
-  bottom?: float,
-  left?: float,
-  right?: float,
-}
-
 type options = {
-  // NOTE(@EmileRolley): children should only be Paragraph or Table
-  children: array<FileChild.t>,
+  children: array<Util.Types.ParagraphOrTable.t>,
   borders?: tableCellBorders,
   columnSpan?: int,
-  margins?: tableCellMarginOptions,
+  margins?: TableCellMarginOptions.t,
   rowSpan?: float,
   shading?: ShadingAttributesProperties.t,
   textDirection?: TextDirection.t,
