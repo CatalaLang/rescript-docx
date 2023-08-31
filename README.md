@@ -24,6 +24,8 @@
 
 * [Usage](#usage)
     * [Examples](#examples)
+        * [Local](#local)
+        * [Real world](#real-world)
 * [API coverage](#api-coverage)
 * [Binding conventions](#binding-conventions)
     * [Primitives](#primitives)
@@ -32,6 +34,7 @@
     * [Inline variant types](#inline-variant-types)
     * [Reserved keywords](#reserved-keywords)
     * [Interface inheritance](#interface-inheritance)
+* [Sponsors](#sponsors)
 
 <!-- vim-markdown-toc -->
 
@@ -42,6 +45,8 @@ yarn add -D rescript-docx
 ```
 
 ### Examples
+
+#### Local
 
 Some examples are available in
 [`examples/`](https://github.com/EmileRolley/rescript-docx/blob/main/examples).
@@ -56,6 +61,11 @@ npx node examples/<fileName>.bs.js
 
 # The result is stored in the root with the corresponding name: <fileName>.docx
 ```
+
+#### Real world
+
+- [`catala-explain`](https://github.com/CatalaLang/catala-explain) - _A module
+for explicability from the trace of a catala program_
 
 ## API coverage
 
@@ -96,10 +106,7 @@ to be integers then to `int`.
 
 ### Enums
 
-> TODO: choose between this implementation or using polymorphic variants
-
-Enums are implemented as modules with a `t` type and functions with the name of
-the enum in lowercase.
+Enums are bound to a polymorphic variant:
 
 ```typescript
 // In TypeScript
@@ -112,16 +119,17 @@ enum AlignmentType = {
 ```
 
 ```rescript
-// Corresponding AlignmentType.resi file
-type t
-let start: t
-let center: t
-let num_tab: t
-...
+// Corresponding AlignmentType.res file
+type t = [
+    | #start,
+    | #center,
+    | #numTab,
+    ...
+]
 ```
 
-> 🔜 In the incoming ReScript 11.0, this could be done cleaner by using
-> the new [tagged
+> 🔜 In the incoming ReScript 11.0, this could be done cleaner by using the new
+> [tagged
 > variants](https://rescript-lang.org/blog/improving-interop#binding-to-typescript-enums).
 
 ### Polymorphic constructors 
@@ -188,3 +196,11 @@ For example, the attribute `type` is `type_`.
 > 🔜 In the incoming ReScript 11.0, using [record type
 > spread](https://rescript-lang.org/blog/enhanced-ergonomics-for-record-types#record-type-spread)
 > will allows to factorizes interface inheritance.
+
+## Sponsors
+
+This library has been developed during a research project funded by the
+[_mission logiciels libres et communs numériques_](https://www.code.gouv.fr/)
+of the [_direction interministérielle du
+numérique_](https://www.numerique.gouv.fr/) in collaboration with the
+[Catala](https://catala-lang.org/) project.
