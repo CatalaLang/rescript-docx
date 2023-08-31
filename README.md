@@ -67,7 +67,7 @@ See which features are covered in the dedicated [doc file](https://github.com/Em
 * ✅ `Paragraph`
 * ❌ `Comments`
 * ❌ `Footnotes`
-* ❌ `Hyperlinks`
+* ✅ `Hyperlinks`
 * ❌ `Images`
 * ❌ `Math`
 * ❌ `Numbering`
