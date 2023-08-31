@@ -5,4 +5,4 @@ type options = {
 }
 
 @module("docx") @new
-external create: options => ParagraphChild.t = "InternalHyperlink"
+external make: options => ParagraphChild.t = "InternalHyperlink"

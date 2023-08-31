@@ -1,4 +1,10 @@
 module Types = {
+  module Percentage = {
+    type t
+
+    let make = (~negative=false, ~val: float) =>
+      `${negative ? "-" : ""}${val->Belt.Float.toString}%`
+  }
   // TODO: should be more precise and model the fact that the value could be a 'positive' universal measure
   module NumberOrUniversalMeasure = {
     type t
@@ -18,6 +24,14 @@ module Types = {
     type t
 
     external fromBool: bool => t = "%identity"
+    external fromFloat: float => t = "%identity"
+    external fromString: string => t = "%identity"
+  }
+
+  module NumberOrPercentageOrUniversalMeasure = {
+    type t
+
+    external fromPercentage: Percentage.t => t = "%identity"
     external fromFloat: float => t = "%identity"
     external fromString: string => t = "%identity"
   }

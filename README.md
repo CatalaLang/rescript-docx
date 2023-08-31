@@ -72,6 +72,7 @@ See which features are covered in the dedicated [doc file](https://github.com/Em
 * ❌ `Math`
 * ❌ `Numbering`
 * 🚧 `Table`
+    * ✅ `TableCell`   
 * ❌ `TableOfContents`
 * ❌ `Tabs`
 * 🚧 `TextRun`
