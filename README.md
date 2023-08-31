@@ -77,7 +77,7 @@ See which features are covered in the dedicated [doc file](https://github.com/Em
     * ❌ TableColumn
 * ❌ Tabs
 * ❌ Table Of Contents
-* ❌ Page Numbers
+* ✅ Page Numbers
 * ❌ Change Tracking
 * ❌ Math
 * ❌ Comments
