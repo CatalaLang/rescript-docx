@@ -73,6 +73,8 @@ See which features are covered in the dedicated [doc file](https://github.com/Em
 * ❌ `Numbering`
 * 🚧 `Table`
     * ✅ `TableCell`   
+    * ✅ `TableRow`   
+    * ❌ `TableColumn`
 * ❌ `TableOfContents`
 * ❌ `Tabs`
 * 🚧 `TextRun`
