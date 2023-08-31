@@ -1,6 +1,6 @@
 {
   "name": "rescript-docx",
-  "namespace": "docx2",
+  "namespace": "docx",
   "version": "0.1.0",
   "sources": [
     {
