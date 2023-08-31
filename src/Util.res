@@ -1,4 +1,14 @@
 module Types = {
+  type paragraph
+  type table
+
+  module ParagraphOrTable = {
+    type t
+
+    external fromParagraph: paragraph => t = "%identity"
+    external fromTable: table => t = "%identity"
+  }
+
   module Percentage = {
     type t
 

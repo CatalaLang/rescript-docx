@@ -1,4 +1,4 @@
-type t
+type t = Util.Types.paragraph
 
 type bullet = {level: int}
 

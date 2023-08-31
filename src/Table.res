@@ -36,4 +36,4 @@ type options = {
 }
 
 @module("docx") @new
-external create: options => t = "Table"
+external make: options => t = "Table"
