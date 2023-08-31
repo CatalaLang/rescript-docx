@@ -68,6 +68,7 @@ See which features are covered in the dedicated [doc file](https://github.com/Em
 * ❌ `Comments`
 * ❌ `Footnotes`
 * ✅ `Hyperlinks`
+* ✅ `PageReference`
 * ❌ `Images`
 * ❌ `Math`
 * ❌ `Numbering`
