@@ -61,24 +61,28 @@ npx node examples/<fileName>.bs.js
 
 See which features are covered in the dedicated [doc file](https://github.com/EmileRolley/rescript-docx/blob/main/docs/supported-features.md).
 
-* ✅ `Document`
-* ✅ `Headers`
-* ✅ `Packers`
-* ✅ `Paragraph`
-* ❌ `Comments`
-* ❌ `Footnotes`
-* ✅ `Hyperlinks`
-* ✅ `PageReference`
-* ❌ `Images`
-* ❌ `Math`
-* ❌ `Numbering`
-* 🚧 `Table`
-    * ✅ `TableCell`   
-    * ✅ `TableRow`   
-    * ❌ `TableColumn`
-* ❌ `TableOfContents`
-* ❌ `Tabs`
-* 🚧 `TextRun`
+* ✅ Document
+* 🚧 Sections
+* ✅ Paragraph
+* 🚧 Text
+* ❌ Images
+* ✅ Headers & Footers
+* ❌ Bullet Points
+* ✅ Hyperlinks
+* ❌ Numbering
+* 🚧 Tables
+    * ✅ TableCell
+    * ✅ TableRow
+    * ❌ TableColumn
+* ❌ Tabs
+* ❌ Table Of Contents
+* ❌ Page Numbers
+* ❌ Change Tracking
+* ❌ Math
+* ❌ Comments
+* ❌ Footnotes
+* ❌ Fields
+* ✅ Packers
 
 ## Binding conventions
 
