@@ -3,11 +3,11 @@
 	<big><code>rescript-docx</code></big>
   </h3>
   <p align="center">
-   <a href="https://github.com/EmileRolley/rescript-docx/issues">Report Bug</a>
+   <a href="https://github.com/CatalaLang/rescript-docx/issues">Report Bug</a>
    •
    <a href="https://incubateur-ademe.github.io/publicodes-tools/">API docs</a>
    •
-   <a href="https://github.com/EmileRolley/rescript-docx/blob/master/CONTRIBUTING.md">Contribute</a>
+   <a href="https://github.com/CatalaLang/rescript-docx/blob/master/CONTRIBUTING.md">Contribute</a>
    •
    <a href="https://docx.js.org">docx.js</a>
   </p>
@@ -49,7 +49,7 @@ yarn add -D rescript-docx
 #### Local
 
 Some examples are available in
-[`examples/`](https://github.com/EmileRolley/rescript-docx/blob/main/examples).
+[`examples/`](https://github.com/CatalaLang/rescript-docx/blob/main/examples).
 To run them simply:
 
 ```bash
@@ -69,7 +69,7 @@ for explicability from the trace of a catala program_
 
 ## API coverage
 
-See which features are covered in the dedicated [doc file](https://github.com/EmileRolley/rescript-docx/blob/main/docs/supported-features.md).
+List of supported features:
 
 * ✅ Document
 * 🚧 Sections
@@ -77,9 +77,9 @@ See which features are covered in the dedicated [doc file](https://github.com/Em
 * 🚧 Text
 * 🚧 Images (_Missing correct modelization of the `ImageRun.options.data` type_)
 * ✅ Headers & Footers
-* ❌ Bullet Points
+* ✅ Bullet Points
 * ✅ Hyperlinks
-* ❌ Numbering
+* ✅ Numbering
 * ✅ Tables
 * ❌ Tabs
 * ❌ Table Of Contents
