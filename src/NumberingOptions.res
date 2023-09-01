@@ -4,7 +4,7 @@ type levelStyle = {
 }
 
 type levelOptions = {
-  level: float,
+  level: int,
   format?: LevelFormat.t,
   text?: string,
   alignment?: AlignmentType.t,

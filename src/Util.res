@@ -63,7 +63,7 @@ module Types = {
   type numbering = {
     custom?: bool,
     instance?: float,
-    level: float,
+    level: int,
     reference: string,
   }
 }
