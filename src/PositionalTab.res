@@ -1,6 +1,6 @@
 /** @see https://docx.js.org/api/classes/PositionalTab.html */
 type option = {
-  alignment: [#left | #center | #rigth],
+  alignment: [#left | #center | #right],
   relativeTo: [#margin | #indent],
   leader: LeaderType.t,
 }
