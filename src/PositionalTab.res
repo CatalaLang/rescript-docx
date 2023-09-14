@@ -2,7 +2,7 @@
 type option = {
   alignment: [#left | #center | #rigth],
   relativeTo: [#margin | #indent],
-  leader: [#none | #dot | #hyphen | #underscore | #middleDot],
+  leader: LeaderType.t,
 }
 
 @module("docx") @new
