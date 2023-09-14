@@ -16,9 +16,11 @@
   "author": "Emile Rolley <emile.rolley@tuta.io>",
   "license": "MIT",
   "devDependencies": {
-    "docx": "^8.2.2",
     "file-saver": "^2.0.5",
     "rescript": "^10.1.4",
     "rescript-nodejs": "^15.0.0"
+  },
+  "dependencies": {
+    "docx": "^8.2.2"
   }
 }
