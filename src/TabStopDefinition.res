@@ -1,10 +1,7 @@
-type tabStopPosition = | @as("9026") Max
-
-@unwrap
-type numberOrTabStopPosition = Number(float) | TabStopPosition(tabStopPosition)
+let maxPosition = 9026
 
 type t = {
   @as("type") type_: [#left | #right | #center | #bar | #clear | #decimal | #end | #num | #start],
-  position: numberOrTabStopPosition,
+  position: int,
   leader?: LeaderType.t,
 }
