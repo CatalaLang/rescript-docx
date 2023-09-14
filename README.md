@@ -81,8 +81,8 @@ List of supported features:
 * ✅ Hyperlinks
 * ✅ Numbering
 * ✅ Tables
-* ❌ Tabs
-* ❌ Table Of Contents
+* ✅ Tabs
+* ✅ Table Of Contents
 * ✅ Page Numbers
 * ❌ Change Tracking
 * ❌ Math
