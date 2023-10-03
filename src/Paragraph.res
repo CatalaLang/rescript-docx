@@ -5,6 +5,7 @@ type bullet = {level: int}
 type options = {
   /* -> To factorize with the v11 record spread notation */
   alignment?: AlignmentType.t,
+  bullet?: bullet,
   thematicBreak?: bool,
   contextualSpacing?: bool,
   rightTabStop?: float,
