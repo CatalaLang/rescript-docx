@@ -5,7 +5,7 @@
   <p align="center">
    <a href="https://github.com/CatalaLang/rescript-docx/issues">Report Bug</a>
    •
-   <a href="https://incubateur-ademe.github.io/publicodes-tools/">API docs</a>
+   <a href="https://docx.js.org/api/">API docs</a>
    •
    <a href="https://github.com/CatalaLang/rescript-docx/blob/master/CONTRIBUTING.md">Contribute</a>
    •
