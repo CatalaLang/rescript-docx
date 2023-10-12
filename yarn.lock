@@ -12,10 +12,10 @@ core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.3.tgz#a6042d3634c2b27e9328f837b965fac83808db85"
   integrity sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==
 
-docx@^8.2.2:
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/docx/-/docx-8.2.2.tgz#9d280920a657493521df2fb8def9f7cfd8a05de4"
-  integrity sha512-dWI5WfD/fDCLdjIA7CcDzV/1uyBD+mmr7jDLTUN997hcbPz56E701Kf1EEWdibdH9kk+0tFSmE+C0jTlkRZ7kQ==
+docx@^8.2.3:
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/docx/-/docx-8.2.3.tgz#9389a7db582afcf27dba68a8e8e54eb692769c15"
+  integrity sha512-Rlr/wPTDh+xQpFew3m4zYQ5OWEZO36HItyPCUbGdicB+ar4zIgseeJdqfcZIY0uQtMSrhGRpSFOTjii7h9cpHw==
   dependencies:
     "@types/node" "^20.3.1"
     jszip "^3.10.1"
