@@ -1,3 +1,4 @@
+open Docx
 open Util
 
 let table = Table.make({
@@ -6,7 +7,7 @@ let table = Table.make({
       children: [
         TableCell.make({
           children: [
-            Paragraph.make'({
+            Paragraph.makeWith({
               children: [
                 ImageRun.make({
                   data: NodeJs.Fs.readFileSync("./images/1.jpg"),
@@ -22,7 +23,7 @@ let table = Table.make({
         }),
         TableCell.make({
           children: [
-            Paragraph.make'({
+            Paragraph.makeWith({
               text: "Hello",
               heading: #Heading1,
             })->Types.ParagraphOrTable.fromParagraph,

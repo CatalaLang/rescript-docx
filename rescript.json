@@ -1,0 +1,34 @@
+{
+  "name": "rescript-docx",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "examples",
+      "type": "dev",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".res.js",
+  "refmt": 3,
+  "jsx": { "version": 4, "mode": "classic" },
+  "bs-dev-dependencies": ["rescript-nodejs"],
+  "gentypeconfig": {
+    "language": "typescript",
+    "shims": {},
+    "generatedFileExtension": ".gen.tsx",
+    "module": "es6",
+    "debug": {
+      "all": false,
+      "basic": false
+    }
+  }
+}

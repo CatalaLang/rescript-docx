@@ -1,4 +1,5 @@
-open FileChild
+open Docx
+open Docx.FileChild
 open Js.Promise2
 
 Document.make({

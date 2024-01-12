@@ -4,8 +4,9 @@
   "version": "0.1.5",
   "scripts": {
     "clean": "rescript clean",
-    "build": "rescript build -with-deps",
-    "watch": "rescript build -w -with-deps"
+    "build": "rescript build",
+    "watch": "rescript build -w",
+    "typecheck": "tsc"
   },
   "keywords": [
     "rescript",
@@ -16,11 +17,13 @@
   "author": "Emile Rolley <emile.rolley@tuta.io>",
   "license": "MIT",
   "dependencies": {
-    "docx": "^8.2.3"
+    "docx": "^8.5.0"
   },
   "devDependencies": {
     "file-saver": "^2.0.5",
-    "rescript": "^10.1.4",
-    "rescript-nodejs": "^15.0.0"
+    "rescript": "^11.0.0",
+    "rescript-nodejs": "^15.0.0",
+    "tsc": "^2.0.4",
+    "typescript": "^5.3.3"
   }
 }

@@ -33,7 +33,6 @@
     * [Polymorphic constructors](#polymorphic-constructors)
     * [Inline variant types](#inline-variant-types)
     * [Reserved keywords](#reserved-keywords)
-    * [Interface inheritance](#interface-inheritance)
 * [Sponsors](#sponsors)
 
 <!-- vim-markdown-toc -->
@@ -124,10 +123,6 @@ type t = [
 ]
 ```
 
-> 🔜 In the incoming ReScript 11.0, this could be done cleaner by using the new
-> [tagged
-> variants](https://rescript-lang.org/blog/improving-interop#binding-to-typescript-enums).
-
 ### Polymorphic constructors 
 
 Each `docx` classes has its corresponding ReScript module.
@@ -147,11 +142,11 @@ const q = new Paragraph({
 
 ```rescript
 // In ReScript
-let p = Paragraph.make("Lorem Ipsum")
-let q = Paragraph.make'({
+let p = Paragraph.make(#str("Lorem Ipsum"))
+let q = Paragraph.make(#opt({
     text: "Lorem ipsum",
     heading: #Heading1,
-})
+}))
 ```
 
 ### Inline variant types
@@ -176,7 +171,8 @@ let float: t = { value: Types.NumberOrString.fromFloat(10.0) }
 let string: t = { value: Types.NumberOrString.fromString("Hello") }
 ```
 
-> 🔜 In the incoming ReScript 11, this could be done more simply by using the new
+> [!TIP]
+> In the incoming ReScript 11, this could be done more simply by using the new
 > [untagged
 > variants](https://rescript-lang.org/blog/improving-interop#untagged-variants).
 
@@ -186,12 +182,6 @@ Some used JavaScript attributes are reserved keywords in ReScript, consequently,
 postfixed by `_`.
 
 For example, the attribute `type` is `type_`.
-
-### Interface inheritance
-
-> 🔜 In the incoming ReScript 11.0, using [record type
-> spread](https://rescript-lang.org/blog/enhanced-ergonomics-for-record-types#record-type-spread)
-> will allows to factorizes interface inheritance.
 
 ## Sponsors
 

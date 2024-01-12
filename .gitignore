@@ -26,6 +26,8 @@ lib/bs
 .bsb.lock
 /node_modules/
 
+*.res.js
 *.bs.js
+*.gen.tsx
 lib/ocaml
 simple-paragraph.docx
